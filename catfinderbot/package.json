@@ -1,0 +1,31 @@
+{
+  "name": "catfinderbot",
+  "version": "1.0.0",
+  "description": "It's a bot to help finding missing cats =^.^=",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azadehkhojandi/CatFinder.git"
+  },
+  "keywords": [
+    "bot",
+    "cats",
+    "microsoft",
+    "bot",
+    "framework",
+    "luis"
+  ],
+  "author": "azadeh khojandi , dave golver",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Azadehkhojandi/CatFinder/issues"
+  },
+  "homepage": "https://github.com/Azadehkhojandi/CatFinder#readme",
+  "dependencies": {
+    "botbuilder": "^3.8.4",
+    "restify": "^5.0.1"
+  }
+}
