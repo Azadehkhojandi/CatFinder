@@ -25,7 +25,10 @@
   },
   "homepage": "https://github.com/Azadehkhojandi/CatFinder#readme",
   "dependencies": {
+    "bluebird": "^3.5.0",
     "botbuilder": "^3.8.4",
+    "dotenv-extended": "^2.0.1",
+    "request-promise": "^4.2.1",
     "restify": "^5.0.1"
   }
 }
