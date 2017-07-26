@@ -27,20 +27,12 @@ var bot = new builder.UniversalBot(connector, function (session) {
 var recognizer = new builder.LuisRecognizer(process.env.LUIS_MODEL_URL);
 bot.recognizer(recognizer);
 
-bot.dialog('Help', function (session) {
-    session.endDialog('Hi! I\'m cat finder, you can  report missing cat , report found cat or see missing cats in your area.');
-}).triggerAction({
+bot.dialog('Help',require('./dialogs/help') ).triggerAction({
     matches: 'Help'
 });
 
 
-
-bot.dialog('Found missing cat', [
-    function (session) {
-        session.endDialog("Found missing cat");
-    }
-
-]).triggerAction({
+bot.dialog('Found missing cat', require('./dialogs/foundmissingcat')).triggerAction({
     matches: 'Found missing cat'
 });
 
@@ -53,11 +45,7 @@ bot.dialog('Report missing cat', require('./dialogs/reportmissingcat')).triggerA
 });;
 
 
-
-
-bot.dialog('Show missing cats', function (session) {
-    session.endDialog('Show missing cats');
-}).triggerAction({
+bot.dialog('Show missing cats', require('./dialogs/reportmissingcat')).triggerAction({
     matches: 'Show missing cats'
 });
 
