@@ -45,7 +45,7 @@ bot.dialog('Report missing cat', require('./dialogs/reportmissingcat')).triggerA
 });;
 
 
-bot.dialog('Show missing cats', require('./dialogs/reportmissingcat')).triggerAction({
+bot.dialog('Show missing cats', require('./dialogs/showmissingcats')).triggerAction({
     matches: 'Show missing cats'
 });
 
