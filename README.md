@@ -1,9 +1,9 @@
 # CatFinder
-Sample to create a bot with node js and connect it to azure storage and cosmos db
+
 
 privacy policy
 
-It's a chat bot to show abilities of microsoft bot framework. You can find the source code of the chat bot at https://github.com/Azadehkhojandi/WemoBot .
+Sample to create a bot with microsoft bot builder node js sdk and connect it to azure storage and cosmos db. You can find the source code of the chat bot at https://github.com/Azadehkhojandi/CatFinder .
 
 Credit
 
